@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/keyevents.css">
+</head>
+<body>
+  <h2>Directions:</h2>
+  <ul>
+    <li>Arrow Up key - moves Frog Up</li>
+    <li>Arrow Down key - moves Frog Down</li>
+    <li>Arrow Left key - moves Frog Left</li>
+    <li>Arrow Right key - moves Frog Right</li>
+  </ul>
+  <div class = "game">
+    <h3 id = "level"> Level: 1</h3><h3 id="fail"> Lives: 3</h3>
+  </div>
+
+    <button id = "btn" class = "noshow">Play Again!</button>
+    <canvas width="600px" height="600px"></canvas>
+
+<div class = "pictures">
+  <div id = "carFastest">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+  </div>
+  <div id = "carFast">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+  </div>
+  <div id = "carMedium">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+  </div>
+  <div id = "carSlow">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+    <img src="images/car.png" class="noshow"  alt="Car">
+  </div>
+  <img id="frog" src="images/frogsmall.png" class="noshow" width="50px" height="50px" alt="Frog">
+  <img id="car" src="images/car.png" class="noshow" width="30px" height="30px" alt="Car">
+  </div>
+  <script src="scripts/keyevents.js"></script>
+
+</body>
+</html>
